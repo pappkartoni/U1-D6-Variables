@@ -18,8 +18,8 @@ let strainer
 
 // Misc
 let carbonara
-let yolkWeight = 18
-let cutGuanciale
+let yolkWeight = 18 // That's what egg yolks weigh i guess
+let cutGuanciale //makes no real sense to have this but wanted to be close to recipe
 let partPepper
 let partWater
 
@@ -28,10 +28,9 @@ cutGuanciale = guanciale
 
 // Combine the egg yolks with the finely grated Pecorino Romano.
 bowl = yolks * yolkWeight + pecorino
-
 // Roast the black pepper on a pan until it smokes and sizzles, and combine a small amount of it to the yolks and cheese mixture, set aside the rest.
 pan = pepper
-partPepper = 0.2 * pepper
+partPepper = 0.2 * pepper //20% of the pepper for the cheese egg mix, rest for later
 pan -= partPepper
 bowl += partPepper
 bowl2 = pan
@@ -44,12 +43,12 @@ pan = null
 
 // Cook the pasta with a pinch of salt in the water (guanciale is already very salty);
 pot = spaghetti + water + salt
-spaghetti = 2.25 * spaghetti 
+spaghetti = 2.25 * spaghetti // Apparently pasta gains 1.25 times its weight when cooked al dente
 strainer = spaghetti
-pot -= spaghetti
+pot -= spaghetti // The weight it gains comes from the water it cooked in
 
 // set aside a ladleful of the pasta water before draining it, then drain the pasta once it is cooked al dente.
-partWater = 0.1 * pot
+partWater = 0.1 * pot // Let's keep 10% of the water for the sauce
 pot = null
 
 // Pour 2 spoons of the reserved hot water into the part of the frying pan containing the cooled guanciale and turn on the heat:
@@ -83,6 +82,5 @@ console.log("Rest in Strainer is", strainer)
 console.log("No? Good.")
 
 // And finally we are left with
-// Assuming egg yolks weigh around 18g and pasta gains 1.25 its weight when cooking we should have 
-// 900g (2.25 * 400) + 250 + 108 (6 * 18) + 50 + 4 + 200 (10% of water water for sauce) + 0.01 (10% of salt added to water) = 1462.01 grams of carbonara
+// 900g (2.25 * 400) + 250 + 108 (6 * 18) + 50 + 4 + 150.01 (10% of salted water left after cooking the pasta) = 1462.01 grams of carbonara
 console.log("And now we are left with", carbonara, "grams of delicious carbonara.")
