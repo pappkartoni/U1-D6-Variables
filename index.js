@@ -72,12 +72,12 @@ function carbonara() {
     bowl2 = null
     
     console.log("Anything left on our used dishes? ")
-    console.log(pan)
-    console.log(pot)
-    console.log(bowl)
-    console.log(bowl2)
-    console.log(plate)
-    console.log(strainer)
+    console.log("Rest in pan is", pan)
+    console.log("Rest in Pot is", pot)
+    console.log("Rest in Bowl is", bowl)
+    console.log("Rest in other Bowl is", bowl2)
+    console.log("Rest on Plate is", plate)
+    console.log("Rest in Strainer is", strainer)
     console.log("No? Good.")
     console.log("And now we are left with", carbonara, "grams of delicious carbonara.")
 
