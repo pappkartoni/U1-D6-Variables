@@ -23,7 +23,6 @@ let cutGuanciale
 let partPepper
 let partWater
 
-
 // To make classic carbonara, first cut the guanciale into 1cm layers, then into long strips.
 cutGuanciale = guanciale
 
@@ -66,6 +65,7 @@ strainer = null
 // It is important to do this part quickly to prevent the yolks from congealing and taking on the texture of scrambled eggs.
 pan += bowl
 bowl = null
+
 // Add the remaining roasted black pepper and serve immediately.
 pan += bowl2
 carbonara = pan
@@ -74,13 +74,14 @@ bowl2 = null
  
 // Let's see if we have nothing left
 console.log("Anything left on our used dishes? ")
-console.log(pan)
-console.log(pot)
-console.log(bowl)
-console.log(bowl2)
-console.log(plate)
-console.log(strainer)
+console.log("Rest in pan is", pan)
+console.log("Rest in Pot is", pot)
+console.log("Rest in Bowl is", bowl)
+console.log("Rest in other Bowl is", bowl2)
+console.log("Rest on Plate is", plate)
+console.log("Rest in Strainer is", strainer)
 console.log("No? Good.")
+
 // And finally we are left with
 // Assuming egg yolks weigh around 18g and pasta gains 1.25 its weight when cooking we should have 
 // 900g (2.25 * 400) + 250 + 108 (6 * 18) + 50 + 4 + 200 (10% of water water for sauce) + 0.01 (10% of salt added to water) = 1462.01 grams of carbonara
